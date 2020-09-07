@@ -1,6 +1,6 @@
 # Lista, Agrega, Atualiza, Elimina
 
-El Agrega, Atualica, Elmina (Lo hace localmente - JSON-Server )
+El Agrega, Atualiza, Elimina (Lo hace localmente - JSON-Server )
 
 El Listar lo hace consumiendo la Api
 
