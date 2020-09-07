@@ -1,4 +1,4 @@
-# Lista, Agrega, Atualica, Elmina
+# Lista, Agrega, Atualiza, Elmina
 
 El Agrega, Atualica, Elmina (Lo hace localmente - JSON-Server )
 
