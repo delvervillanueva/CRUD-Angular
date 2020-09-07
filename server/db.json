@@ -7,8 +7,8 @@
       "id": 1
     },
     {
-      "about": "https://google.com",
-      "accesURL": "https://google.com/file.pdf",
+      "_about": "www.google.com",
+      "accesURL": "www.google.com/archivo.pdf",
       "title": "google",
       "id": 2
     }

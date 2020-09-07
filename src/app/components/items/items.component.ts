@@ -71,9 +71,11 @@ obtenerItems(){
     Swal.fire({
       title: '¿Está seguro?',
       text: `Esta seguro que quiere eliminar a ${items.title}`,
-      type: 'question',
-      showConfirmButton: true,
-      showCancelButton: true
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
     }).then(resp=>{
       if(resp.value){
 

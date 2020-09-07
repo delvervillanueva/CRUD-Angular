@@ -6,6 +6,7 @@ import Swal from 'sweetalert2';
 import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-agregar',
   templateUrl: './agregar.component.html',
@@ -28,7 +29,7 @@ export class AgregarComponent implements OnInit {
       .subscribe((resp : Items)=>{
         this.item = resp;
         this.item.id = id;
-      })
+      });
     }
 
   }
@@ -39,12 +40,10 @@ export class AgregarComponent implements OnInit {
       console.log( 'Formulario no Valido' );
       return;
     }
-    
+
     Swal.fire({
       title: 'Espere',
       text: 'Guardando Información',
-      type: 'info',
-      allowOutSideClick: false
     });
     Swal.showLoading();
 
@@ -57,17 +56,19 @@ export class AgregarComponent implements OnInit {
      peticion = this.cucService.crearItem(this.item)
     }
 
-    peticion.subscribe(resp=>{
+    peticion.subscribe(resp =>{
 
-      Swal.fire({
-        titulo: this.item.tile,
-        text: 'Se actualizo Correctamente',
-        type: 'success'
-      });
+      Swal.fire(
+        'Acutalizado',
+       'Se actualizo Correctamente',
+        'success'
+      );
 
     });
 
 
   }
+
+
 
 }

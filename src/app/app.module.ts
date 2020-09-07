@@ -9,7 +9,6 @@ import { InterceptorService } from './interceptors/interceptor.service';
 
 import {AccordionModule} from 'primeng/accordion';
 
-
 //primeng
 import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
@@ -17,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgregarComponent } from './components/agregar/agregar.component';
 import { ItemsComponent } from './components/items/items.component';
+
+
 
 
 
