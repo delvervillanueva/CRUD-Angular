@@ -1,12 +1,12 @@
 # Lista, Agrega, Atualiza, Elimina
 
-El Agrega, Atualiza, Elimina (Lo hace localmente - JSON-Server )
+Agregar, Atualizar, Eliminar (Lo hace localmente - JSON-Server )
 
 El Listar lo hace consumiendo la Api
 
 
 ````      ¨¨
-Correr el:
+Correr los comandos:
 
 npm install
 json-server --watch db.json
