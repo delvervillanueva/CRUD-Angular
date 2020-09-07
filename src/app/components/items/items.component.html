@@ -1,0 +1,124 @@
+<h3 class="text-center">
+    Prueba técnica Angular</h3>
+<hr>
+
+<div class="card">
+    <h5>Implicit Pagination</h5>
+    <p-table *ngIf="!cargando && items.length > 0 " class="animated fadeIn faster" [value]="items" [paginator]="true" [rows]="5" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Company</th>
+                <th>Representative</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-items>
+            <tr>
+                <td> <span class="badge badge-light">  <a href="{{items._about}}" target="_blank"> View Web Page
+                    <i class="fas fa-link"></i>
+                </a></span></td>
+
+                <td><span class="badge badge-light"> <a href="{{items.accessURL}}" target="_blank"> View Format PDF/Excel
+                    <i class="fas fa-link"></i>
+                </a></span></td>
+
+
+                <td> {{[items.title]}} </td>
+                <td>
+                    <button class="btn btn-info mr-5">
+                        <i class="fa fa-edit"></i>
+                    </button>
+
+                    <button class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="paginatorleft">
+            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-table>
+</div>
+
+<!----------------------------- Item local------------------------>
+<h3 class="text-center">
+    Items Locales</h3>
+<hr>
+
+<div class="row mb-2">
+    <div class="col text-right">
+        <button routerLink="/agregar/nuevo" class="btn btn-primary">
+            <i class="fa fa-plus"></i>
+            Add
+        </button>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Items Locales</h5>
+    <p-table *ngIf="!cargando" class="animated fadeIn faster" [value]="items_locales" [paginator]="true" [rows]="5" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Company</th>
+                <th>Representative</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-items_locales>
+            <tr>
+                <td> <span class="badge badge-light">  <a href="{{items_locales._about}}" target="_blank"> View Web Page
+                    <i class="fas fa-link"></i>
+                </a></span></td>
+
+                <td><span class="badge badge-light"> <a href="{{items_locales.accessURL}}" target="_blank"> View Format PDF/Excel
+                    <i class="fas fa-link"></i>
+                </a></span></td>
+
+
+                <td> {{[items_locales.title]}} </td>
+                <td>
+                    <button [routerLink]="['/agregar', items_locales.id]" class="btn btn-info mr-5">
+                        <i class="fa fa-edit"></i>
+                    </button>
+
+                    <button (click)="eliminarItem(items_locales)" class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="paginatorleft">
+            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+        </ng-template>
+    </p-table>
+</div>
+
+<div *ngIf="!cargando && items.length === 0 " class="alert alert-warning text-center mt-3 animated fadeIn faster">
+    <h4 class="alert-heading">No hay registros</h4>
+    <p>
+        <i class="fa fa-exclamation fa-2x"></i>
+    </p>
+</div>
+
+<div *ngIf="cargando" class="alert alert-info text-center mt-3 animated fadeIn faster">
+    <h4 class="alert-heading">Cargando</h4>
+
+    <p>
+        <i class="fa fa-sync-alt fa-spin fa-2x"></i>
+    </p>
+
+    <p class="mb-0">
+        Espere por favor
+    </p>
+
+</div>

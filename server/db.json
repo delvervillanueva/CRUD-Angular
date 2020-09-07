@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "about": "https://soaint.com/",
+      "accesURL": "https://soaint.com/aarchiv.pdf",
+      "title": "soaint",
+      "id": 1
+    },
+    {
+      "about": "https://google.com",
+      "accesURL": "https://google.com/file.pdf",
+      "title": "google",
+      "id": 2
+    }
+  ]
+}

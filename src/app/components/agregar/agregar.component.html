@@ -1,0 +1,51 @@
+<h1>Item <small> Nombre de  Item</small> </h1>
+<hr>
+
+<div class="row text-right">
+    <div class="col">
+        <button routerLink="/items" class="btn btn-danger">
+            <i class="fa fa-arrow-left"></i>
+            Regresar
+
+        </button>
+    </div>
+</div>
+
+<div class="row animated fadeIn faster">
+    <div class="col">
+
+        <form (ngSubmit)="guardar( f )" #f="ngForm">
+
+
+            <div class="form-group">
+                <label> Item ID</label>
+                <input type="text" class="form-control" placeholder="Item ID" [(ngModel)]=item.id name="id" disabled="disabled">
+                <small class="form-text text-muted">Este campo es autogenerado</small>
+            </div>
+
+            <div class="form-group">
+                <label>About</label>
+                <input type="text" class="form-control" placeholder=" about" [(ngModel)]=item.about name="about">
+            </div>
+
+            <div class="form-group">
+                <label>AccessURL</label>
+                <input type="text" class="form-control" placeholder="accessURL" [(ngModel)]=item.accesURL name="accessURL">
+            </div>
+
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Title name" [(ngModel)]=item.title name="title">
+            </div>
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                    <i class="fa fa-save"></i>
+                    Guardar
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
