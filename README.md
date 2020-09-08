@@ -18,7 +18,7 @@ https://proyecto-cuc.delvervillanueva.vercel.app
 ## Correr los comandos
 
 - npm install
-- json-server --watch db.json - dentro de la carpeta "s/server"
+- json-server --watch db.json - dentro de la carpeta "/server"
 
 ## Nota
 
