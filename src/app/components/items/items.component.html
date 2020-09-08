@@ -7,10 +7,10 @@
     <p-table *ngIf="!cargando && items.length > 0 " class="animated fadeIn faster" [value]="items" [paginator]="true" [rows]="5" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
         <ng-template pTemplate="header">
             <tr>
-                <th>Name</th>
-                <th>Country</th>
-                <th>Company</th>
-                <th>Representative</th>
+                <th>About</th>
+                <th>AccessURL</th>
+                <th>Title</th>
+                <th>Tools</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-items>
@@ -64,10 +64,10 @@
     <p-table *ngIf="!cargando" class="animated fadeIn faster" [value]="items_locales" [paginator]="true" [rows]="5" [showCurrentPageReport]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
         <ng-template pTemplate="header">
             <tr>
-                <th>Name</th>
-                <th>Country</th>
-                <th>Company</th>
-                <th>Representative</th>
+                <th>About</th>
+                <th>AccessURL</th>
+                <th>Title</th>
+                <th>Tools</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-items_locales>
