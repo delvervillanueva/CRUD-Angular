@@ -1,10 +1,4 @@
-# Lista, Agrega, Atualiza, Elimina
-
-Agregar, Atualizar, Eliminar (Lo hace localmente - JSON-Server )
-
-El Listar lo hace consumiendo la Api
-
-Hosting:  https://proyecto-cuc.delvervillanueva.vercel.app
+# CRUD con Angular
 
 
 ````      ¨¨
@@ -12,9 +6,23 @@ Correr los comandos:
 
 npm install
 
+Ejecutar el comando, "json-server --watch db.json" - dentro de la carpeta "s/erver"   -  
+Para:  Agregar, Atualizar, Eliminar (Localmente )
 
 
+Está es una aplicación - CRUD, creada con Angular
 
-Ejecutar el comando, dentro de la carpeta "s/erver"
+El Listar lo hace consumiendo la Api
+Hosting:  https://proyecto-cuc.delvervillanueva.vercel.app
 
-json-server --watch db.json
+
+Conceptos Cubierto
+JSON-Server
+Angular PrimeNG  - Tabla - paginación
+Validacion Form
+Bootstrap
+Animate css
+
+
+Demo
+https://proyecto-cuc.delvervillanueva.vercel.app
