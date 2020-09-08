@@ -1,20 +1,26 @@
-# Lista, Agrega, Atualiza, Elimina
+# CRUD con Angular
 
-Agregar, Atualizar, Eliminar (Lo hace localmente - JSON-Server )
+Está es una aplicación - CRUD creada con Angular
 
-El Listar lo hace consumiendo la Api
+# Conceptos Cubiertos
 
-Hosting:  https://proyecto-cuc-eygp9ie29.vercel.app
+- JSON-Server
+- Angular PrimeNG  - Tabla - paginación
+- Validacion Form
+- Bootstrap
+- Animate css
+- Sweetalert2
 
+# Demo en vivo
 
-````      ¨¨
-Correr los comandos:
+https://proyecto-cuc.delvervillanueva.vercel.app
 
-npm install
+# Correr los comandos
 
+- npm install
+- json-server --watch db.json - dentro de la carpeta "s/server"
 
+# Nota
 
-
-Ejecutar el comando, dentro de la carpeta "s/erver"
-
-json-server --watch db.json
+- El Listar lo hace consumiendo la Api
+- Agregar, Atualizar, Eliminar (Localmente )
